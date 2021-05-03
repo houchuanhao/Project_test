@@ -1,0 +1,40 @@
+# Reading D:/VLSI/Modelsim/modelsim_ase/tcl/vsim/pref.tcl 
+# do p1_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\VLSI\Modelsim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\VLSI\Modelsim\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/VLSI/Project {D:/VLSI/Project/p1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module p1
+# 
+# Top level modules:
+# 	p1
+# 
+# vlog -vlog01compat -work work +incdir+D:/VLSI/Project/simulation/modelsim {D:/VLSI/Project/simulation/modelsim/p1_vlg_tst.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module p1_vlg_tst
+# 
+# Top level modules:
+# 	p1_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L arriaiigz_hssi_ver -L arriaiigz_pcie_hip_ver -L arriaiigz_ver -L rtl_work -L work -voptargs="+acc"  p1_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L arriaiigz_hssi_ver -L arriaiigz_pcie_hip_ver -L arriaiigz_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps p1_vlg_tst 
+# Loading work.p1_vlg_tst
+# Loading work.p1
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+# Break key hit 
+# Simulation stop requested.

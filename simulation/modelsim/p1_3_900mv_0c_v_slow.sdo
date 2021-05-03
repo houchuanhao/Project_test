@@ -1,0 +1,261 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+
+// 
+// Device: Altera EP2AGZ225FF35C3 Package FBGA1152
+// 
+
+//
+// This file contains Slow Corner delays for the design using part EP2AGZ225FF35C3,
+// with speed grade 3, core voltage 0.9V, and temperature 0 Celsius
+//
+
+// 
+// This SDF file should be used for ModelSim-Altera (Verilog) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "p1")
+  (DATE "05/03/2021 21:51:34")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus II 64-Bit")
+  (VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Full Version")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "arriaiigz_io_obuf")
+    (INSTANCE cnt\[0\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (423:423:423) (401:401:401))
+        (IOPATH i o (2617:2617:2617) (2618:2618:2618))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_io_obuf")
+    (INSTANCE cnt\[1\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (387:387:387) (359:359:359))
+        (IOPATH i o (2558:2558:2558) (2559:2559:2559))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_io_obuf")
+    (INSTANCE cnt\[2\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (412:412:412) (390:390:390))
+        (IOPATH i o (2618:2618:2618) (2619:2619:2619))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_io_obuf")
+    (INSTANCE cnt\[3\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (413:413:413) (383:383:383))
+        (IOPATH i o (2607:2607:2607) (2608:2608:2608))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_io_obuf")
+    (INSTANCE cout\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (298:298:298) (298:298:298))
+        (IOPATH i o (2557:2557:2557) (2559:2559:2559))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_io_ibuf")
+    (INSTANCE clk\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (631:631:631) (557:557:557))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_and2")
+    (INSTANCE clk\~inputclkctrl.outclk_and)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH IN1 Y (608:608:608) (624:624:624))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_lcell_comb")
+    (INSTANCE cnt_temp\[0\]\~3)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datae combout (350:350:350) (318:318:318))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_io_ibuf")
+    (INSTANCE rstn\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (629:629:629) (556:556:556))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_and2")
+    (INSTANCE rstn\~inputclkctrl.outclk_and)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH IN1 Y (608:608:608) (624:624:624))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE cnt_temp\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2031:2031:2031) (2102:2102:2102))
+        (PORT d (73:73:73) (89:89:89))
+        (PORT clrn (1970:1970:1970) (1936:1936:1936))
+        (IOPATH (posedge clk) q (42:42:42) (42:42:42))
+        (IOPATH (negedge clrn) q (131:131:131) (131:131:131))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (74:74:74))
+      (HOLD d (posedge clk) (32:32:32))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_lcell_comb")
+    (INSTANCE cnt_temp\[2\]\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (204:204:204) (225:225:225))
+        (PORT dataf (383:383:383) (427:427:427))
+        (IOPATH datad combout (250:250:250) (238:238:238))
+        (IOPATH datae combout (350:350:350) (318:318:318))
+        (IOPATH dataf combout (82:82:82) (71:71:71))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE cnt_temp\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2031:2031:2031) (2102:2102:2102))
+        (PORT d (73:73:73) (89:89:89))
+        (PORT clrn (1970:1970:1970) (1936:1936:1936))
+        (IOPATH (posedge clk) q (42:42:42) (42:42:42))
+        (IOPATH (negedge clrn) q (131:131:131) (131:131:131))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (74:74:74))
+      (HOLD d (posedge clk) (32:32:32))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_lcell_comb")
+    (INSTANCE cnt_temp\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (187:187:187) (204:204:204))
+        (PORT datac (257:257:257) (305:305:305))
+        (PORT dataf (380:380:380) (426:426:426))
+        (IOPATH datab combout (376:376:376) (377:377:377))
+        (IOPATH datac combout (275:275:275) (290:290:290))
+        (IOPATH datad combout (376:376:376) (338:338:338))
+        (IOPATH dataf combout (82:82:82) (71:71:71))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE cnt_temp\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2031:2031:2031) (2102:2102:2102))
+        (PORT d (73:73:73) (89:89:89))
+        (PORT clrn (1970:1970:1970) (1936:1936:1936))
+        (IOPATH (posedge clk) q (42:42:42) (42:42:42))
+        (IOPATH (negedge clrn) q (131:131:131) (131:131:131))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (74:74:74))
+      (HOLD d (posedge clk) (32:32:32))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_lcell_comb")
+    (INSTANCE cnt_temp\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (199:199:199) (221:221:221))
+        (PORT datad (195:195:195) (215:215:215))
+        (PORT dataf (388:388:388) (432:432:432))
+        (IOPATH datac combout (250:250:250) (238:238:238))
+        (IOPATH datad combout (302:302:302) (319:319:319))
+        (IOPATH datae combout (350:350:350) (318:318:318))
+        (IOPATH dataf combout (80:80:80) (74:74:74))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE cnt_temp\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2031:2031:2031) (2102:2102:2102))
+        (PORT d (73:73:73) (89:89:89))
+        (PORT clrn (1970:1970:1970) (1936:1936:1936))
+        (IOPATH (posedge clk) q (42:42:42) (42:42:42))
+        (IOPATH (negedge clrn) q (131:131:131) (131:131:131))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (74:74:74))
+      (HOLD d (posedge clk) (32:32:32))
+    )
+  )
+  (CELL
+    (CELLTYPE "arriaiigz_lcell_comb")
+    (INSTANCE Equal1\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (229:229:229) (262:262:262))
+        (PORT datab (184:184:184) (201:201:201))
+        (PORT datac (205:205:205) (226:226:226))
+        (PORT dataf (184:184:184) (199:199:199))
+        (IOPATH dataa combout (369:369:369) (364:364:364))
+        (IOPATH datab combout (371:371:371) (363:363:363))
+        (IOPATH datac combout (228:228:228) (217:217:217))
+        (IOPATH dataf combout (80:80:80) (74:74:74))
+      )
+    )
+  )
+)

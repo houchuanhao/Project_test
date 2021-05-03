@@ -1,0 +1,20 @@
+Analysis & Synthesis Status : Successful - Mon May 03 21:50:44 2021
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : p1
+Top-level Entity Name : p1
+Family : Arria II GZ
+Logic utilization : N/A
+    Combinational ALUTs : 5
+    Memory ALUTs : 0
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 7
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0

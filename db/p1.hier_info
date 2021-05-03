@@ -1,0 +1,16 @@
+|p1
+rstn => cnt_temp[0].ACLR
+rstn => cnt_temp[1].ACLR
+rstn => cnt_temp[2].ACLR
+rstn => cnt_temp[3].ACLR
+clk => cnt_temp[0].CLK
+clk => cnt_temp[1].CLK
+clk => cnt_temp[2].CLK
+clk => cnt_temp[3].CLK
+cnt[0] << cnt_temp[0].DB_MAX_OUTPUT_PORT_TYPE
+cnt[1] << cnt_temp[1].DB_MAX_OUTPUT_PORT_TYPE
+cnt[2] << cnt_temp[2].DB_MAX_OUTPUT_PORT_TYPE
+cnt[3] << cnt_temp[3].DB_MAX_OUTPUT_PORT_TYPE
+cout << Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
