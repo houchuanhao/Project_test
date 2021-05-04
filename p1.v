@@ -1,3 +1,4 @@
+/*
 module p1(
 	input	rstn,//reset low active
 	input clk, // clock
@@ -21,3 +22,113 @@ module p1(
 	assign cnt=cnt_temp;
 	
 endmodule
+*/
+module p1(input rstn,
+	input clk,
+	input A,
+	input B,
+	input Ci,
+	output C0,
+	output S);
+	reg C0_tem;
+	reg S_tem;
+	always@(posedge clk or negedge rstn)begin
+		if(!rstn) begin //rstn=0
+		C0_tem<=0;
+		S_tem<=0;
+		end
+		else begin
+			S_tem=A^B^Ci;
+			C0_tem=A&B|B&Ci|A&Ci;
+		end	
+	end
+	assign C0=C0_tem;
+	assign S=S_tem;
+endmodule	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

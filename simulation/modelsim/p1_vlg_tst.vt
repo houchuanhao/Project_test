@@ -1,29 +1,4 @@
-// Copyright (C) 1991-2013 Altera Corporation
-// Your use of Altera Corporation's design tools, logic functions 
-// and other software and tools, and its AMPP partner logic 
-// functions, and any output files from any of the foregoing 
-// (including device programming or simulation files), and any 
-// associated documentation or information are expressly subject 
-// to the terms and conditions of the Altera Program License 
-// Subscription Agreement, Altera MegaCore Function License 
-// Agreement, or other applicable license agreement, including, 
-// without limitation, that your use is for the sole purpose of 
-// programming logic devices manufactured by Altera and sold by 
-// Altera or its authorized distributors.  Please refer to the 
-// applicable agreement for further details.
-
-// *****************************************************************************
-// This file contains a Verilog test bench template that is freely editable to  
-// suit user's needs .Comments are provided in each section to help the user    
-// fill out necessary details.                                                  
-// *****************************************************************************
-// Generated on "04/26/2021 21:16:36"
-                                                                                
-// Verilog Test Bench template for design : p1
-// 
-// Simulation tool : ModelSim-Altera (Verilog)
-// 
-
+/*
 `timescale 1 ps/ 1 ps
 module p1_vlg_tst();
 // constants                                           
@@ -70,4 +45,58 @@ begin
 // --> end                                             
 end                                                    
 endmodule
+*/
+`timescale 1 ps/ 1 ps
+module p1_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg A;
+reg B;
+reg Ci;
+reg clk;
+reg rstn;
+// wires                                               
+wire C0;
+wire S;
+
+// assign statements (if any)                          
+p1 i1 (
+// port map - connection between master ports and signals/registers   
+	.A(A),
+	.B(B),
+	.C0(C0),
+	.Ci(Ci),
+	.S(S),
+	.clk(clk),
+	.rstn(rstn)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+	clk=1'b0;
+	rstn=1'b0;
+	#51;
+	rstn=1'b1;
+	A=1'b1;
+	B=1'b1;
+	Ci=1'b0;	
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+    #10;
+	clk=~clk;                                                   
+//@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+
 
